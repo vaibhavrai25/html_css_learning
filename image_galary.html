@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>image galary</title>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <style>
+        *{
+            padding:0;
+            margin:0;
+            box-sizing: border-box;
+            
+        }
+        .wrapper{
+            max-width: 1200px;
+            
+            margin:0 auto;
+            padding:20px;
+
+        }
+        .container{
+            display:flex;
+            justify-content: space-between;
+            flex-wrap:wrap;
+            
+        }
+        .wrapper h1{
+            margin:20 px;
+            text-align: center;
+            font-size: 40px;
+            color: rgb(51,51,51);
+        }
+        .card{
+            width:32%;
+            overflow: hidden;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            position: relative;
+            transition: 0.3s;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .card img {
+            height: 100%;
+            width: 100%;
+            filter: grayscale(100%);
+            object-fit: cover;
+        }
+
+        .card:hover {
+            transform: scale(1.03);
+            filter: drop-shadow(0 0 10px #333);
+        }
+
+        .card:hover img {
+            filter: grayscale(0);
+        }
+        .card figcaption{
+            position: absolute;
+            bottom: 50%;
+            width: 10%px;
+            height: 6%;
+            background: linear-gradient(0deg, rgba(0, 0, 0, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
+            color: #fff;
+            padding: 25px;
+            opacity: 0;
+            text-align: center;
+           font-weight: 700;
+            font-size: 20px;
+     
+       }
+
+        .card:hover figcaption{
+            opacity: 1;
+            bottom: 20%;
+            transform: translateY(-50%) rotate(360deg);
+            transition: 0.5s;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <h1> My Galary </h1>
+        <div class="container">
+            <figure class="card"> 
+                <img src="image1.jpg">
+                <figcaption> Image 1</figcaption>
+            </figure>
+            <figure class="card"> 
+                <img src="image2.jpeg">
+                <figcaption> Image 2</figcaption>
+            </figure>
+            <figure class="card"> 
+                <img src="image3.jpeg">
+                <figcaption> Image 3</figcaption>
+            </figure>
+            <figure class="card"> 
+                <img src="image4.jpeg">
+                <figcaption> Image 4</figcaption>
+            </figure>
+            <figure class="card"> 
+                <img src="image5.jpeg">
+                <figcaption> Image 5</figcaption>
+            </figure>
+            <figure class="card"> 
+                <img src="image6.jpeg">
+                <figcaption> Image 6</figcaption>
+            </figure>
+            <figure class="card"> 
+                <img src="image7.jpeg">
+                <figcaption> Image 7</figcaption>
+            </figure>
+            <figure class="card"> 
+                <img src="image8.jpeg">
+                <figcaption> Image 8</figcaption>
+            </figure>
+            <figure class="card"> 
+                <img src="image9.jpeg">
+                <figcaption> Image 9</figcaption>
+            </figure>
+            <figure class="card"> 
+                <img src="image10.jpg">
+                <figcaption> Image 10</figcaption>
+            </figure>
+            <figure class="card"> 
+                <img src="image11.jpg">
+                <figcaption> Image 11</figcaption>
+            </figure>
+            <figure class="card"> 
+                <img src="image12.jpg">
+                <figcaption> Image 12</figcaption>
+            </figure>
+            <figure class="card"> 
+                <img src="image13.jpg">
+                <figcaption> Image 13</figcaption>
+            </figure>
+            <figure class="card"> 
+                <img src="image14.jpg">
+                <figcaption> Image 14</figcaption>
+            </figure>
+            <figure class="card"> 
+                <img src="image15.jpg">
+                <figcaption> Image 15</figcaption>
+            </figure>
+            
+
+
+        </div>
+    </div>
+</body>
+</html>
